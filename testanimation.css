@@ -1,0 +1,114 @@
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  
+}
+
+/* Control the left side */
+.left {
+  left: 0;  
+  }
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+.centered1 img {
+  width: 600px;
+  height: 659px;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+body {background-color:#E1E5EA }
+.centered2 img {
+  width: 1100px;
+  height: 500px;
+  margin-left: 13px;
+  margin-top: 150px;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+}
+.bg-text {
+  background-color: rgb(0,0,0); /*Fallback color*/
+  background-color: rgba(0,0,0, 0.4); /*Black w/opacity/see-through */
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-family: Verdana, sans-serif ;
+  font-style: bold;
+  position: absolute;
+  color: #D2DAFF;
+  top: 50%;
+  z-index: 2;
+  width: 80%;
+  padding: 250px;
+  text-align: center;
+}input{
+   display: flex;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 5px;
+  outline: none;
+
+}
+input:focus {
+  border: 2px solid black;
+}
+textarea
+{
+    display: flex;
+  margin-bottom: 10px;
+width: 88%;
+  padding: 10px;
+  outline: none;
+}
+button {
+  background-color: #7F669D;
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.7;
+  font-style: italic;
+  font-size: 14px;
+}
+button:hover{
+  opacity: 1.5;}
+  table{
+   border-collapse: ;
+  border-spacing: 30 0px;
+
+}
+td {
+  width: 400px;
+  text-align: center;
+  padding: 10px;
+}h1{
+  font-size: 25px;
+  color: #400D51;font-family: Bradley Hand, cursive;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+
+}
